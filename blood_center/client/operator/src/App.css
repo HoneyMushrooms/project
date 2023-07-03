@@ -1,0 +1,12 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 660px;
+}
+
+h3 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5%;
+    margin-bottom: 0;
+}

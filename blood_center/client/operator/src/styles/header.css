@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  height: 60px;
+  text-align: center;
+}
+  
+.header__text {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100px;
+}

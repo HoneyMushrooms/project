@@ -1,0 +1,29 @@
+.content {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin: 15% 10% 10% 10%;
+    padding: 3%;
+    font-size: 18px; 
+}
+
+.donor{
+    border: 1px solid #ccc;
+    margin: 1%;
+    padding: 1%;
+}
+
+.el{
+    text-align: center;
+    padding-bottom: 2.45%;
+}
+
+li {
+    padding: 2%;
+}
+
+button {
+    font: 1em sans-serif;
+    padding: 1%;
+    margin-left: 34%;
+    background-color: rgb(79, 7, 86);
+}

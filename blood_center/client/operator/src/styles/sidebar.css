@@ -1,0 +1,12 @@
+.sidebar {
+    background-color: #ffffff;  
+    border-right: 1px solid #ccc;  
+}
+
+.element {
+    margin: 2%;
+    border: 1px solid #ccc;
+    padding: 2%;
+}
+  
+  
