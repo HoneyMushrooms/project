@@ -1,0 +1,124 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-style: normal;
+	line-height: 1;
+	font-size: 18px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400; text-align: center;}
+
+h1{font-weight: 700;margin-bottom: 3%;font-size: xx-large;}
+h2{font-weight: 700;margin-bottom: 3%;font-size: x-large;}
+
+body{    
+    background: url('/client/img/background.jpg') 0 0/cover no-repeat fixed;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color:rgb(255, 255, 255);
+	font-size: large;
+	padding: 7% 10%;
+}
+
+.main{
+	box-shadow: 0 0 10px #000;
+    background-color: #606060;
+    opacity: 0.8;
+	padding: 3% 5%;
+	min-height: 100%;
+}
+
+p{
+	white-space: pre-line; 
+	line-height: 1.5; 
+	text-indent: 4ch;
+	text-align: justify;
+}
+
+.button {
+	display: inline-block;
+	padding: 1.3% 1.7%;
+	font-size: medium;
+	font-weight: 550;
+	text-align: center;
+	background-color: #b5b4b5;
+	color: #fff;
+	border-radius: 5%;
+	margin: 0.3% 0 0 0.3%;
+	cursor: pointer;
+}
+  
+.button:hover {
+	background-color: #ccd7e3;
+}
+  
+.button:active {
+	background-color: #2d2e2f;
+}
+
+hr {	
+	height: 12px;
+	box-shadow: inset 0 15px 12px -11px rgb(255, 255, 255, 0.5);
+	width: 90%;
+	margin: 1% auto 2%;
+}
+
+.content {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.indent {
+	display: inline-block;
+	margin-left: 1.5%; 
+}
+
+video{
+	width: 70%;
+	margin: 0 auto;
+	display: block;
+}
+
+.right {
+	margin-left: auto;
+	margin-top: 2%;
+	padding: 2%;
+}
+
+.center {
+	margin-top: 2%;
+	padding: 2%;
+}
+
+.left {
+	margin-right: auto;
+	margin-top: 2%;
+	padding: 2%;
+}
