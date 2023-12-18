@@ -1,15 +1,15 @@
 export default new class workDate {
     
-    checkFreeDay (date) {
+    checkFreeDay (date: string): boolean {
         const [dd, mm, yyyy] = date.split('.');
-        const day = new Date(yyyy, mm - 1, dd).getDay();
+        const day = new Date(+yyyy, +mm - 1, +dd).getDay();
     
         return day == 0 || day == 6;
     }
 
-    formattedDate (date) { return`${date.getDate().toString().padStart(2, '0')}.${(date.getMonth() + 1).toString().padStart(2, '0')}.${date.getFullYear().toString().padStart(4, '0')}`}
+    formattedDate = (date: Date): string => `${date.getDate().toString().padStart(2, '0')}.${(date.getMonth() + 1).toString().padStart(2, '0')}.${date.getFullYear().toString().padStart(4, '0')}`;
     
-    getModayAndFriday(date = new Date()) {
+    getModayAndFriday(date: Date = new Date()): [string, string] {
 
         const dayOfWeek = date.getDay();
         const mondayDiff = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
