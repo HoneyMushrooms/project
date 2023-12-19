@@ -17,8 +17,8 @@ app.get('/video/:file', (req, res) => {
     if (range) {
         let [ start, end ] = range.replace(/bytes=/, '').split('-');
         const fileSize = statSync(file).size;
-        if(!end) end = fileSize - 1;
-        const chunkSize = (end - start) + 1;
+        if(!end) end = (fileSize - 1).toString();
+        const chunkSize = (+end - +start) + 1;
 
 
         res.writeHead(206, {
@@ -38,7 +38,7 @@ app.get('/video', (req, res) => {
     const { season, episode } = req.query;
 
     if(season && episode) {
-        const current = videoInfo.findIndex(e => e.season == season && e.episode == episode);
+        const current = videoInfo.findIndex(e => e.season == +season && e.episode == +episode);
         res.json({prev: videoInfo[current - 1], next: videoInfo[current + 1]});
     } else {
         res.json(videoInfo);

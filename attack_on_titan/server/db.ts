@@ -1,7 +1,11 @@
-export default [
-    {episode: 1, season: 1, fileName: 'animevost_1-seriya-Ataka-titanov-720p.mp4'},
-    {episode: 2, season: 1, fileName: 'animevost_2-seriya-Ataka-titanov-720p.mp4'},
-    {episode: 3, season: 1, fileName: 'animevost_3-seriya-Ataka-titanov-720p.mp4'},
+const db: { 
+    episode: number;
+    season: number;
+    fileName?: string;
+}[] = [
+    {episode: 1, season: 1, fileName: 'animevost_1-seriya-Ataka-titanov-480p.mp4'},
+    {episode: 2, season: 1, fileName: 'animevost_2-seriya-Ataka-titanov-480p.mp4'},
+    {episode: 3, season: 1, fileName: 'animevost_3-seriya-Ataka-titanov-480p.mp4'},
     {episode: 4, season: 1},
     {episode: 5, season: 1},
     {episode: 6, season: 1},
@@ -88,3 +92,5 @@ export default [
     {episode: 28, season: 4},
     {episode: 29, season: 4},
 ];
+
+export default db;
